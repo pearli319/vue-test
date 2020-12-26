@@ -1,14 +1,14 @@
 <template>
 <header :class="{openMenu: isOpen}">
     <nav>
-        <h1>Mike</h1>
+        <router-link class="title" to="/">Mike</router-link>
         <a id="moblie_menu" href="javascript:;" @click="handleOpenManu"></a>
         <div>
-            <a href="javascript:;">RWD</a>
-            <a href="javascript:;">VUEJS</a>
-            <a href="javascript:;">REACTJS</a>
-            <a href="javascript:;">HTML5</a>
-            <a href="javascript:;">NODEJS</a>
+            <router-link to="/rwd">RWD</router-link>
+            <router-link to="/vuejs">VUEJS</router-link>
+            <router-link to="/reactjs">REACTJS</router-link>
+            <router-link to="/html5">HTML5</router-link>
+            <router-link to="/nodejs">NODEJS</router-link>
         </div>
     </nav>
 </header>
@@ -24,7 +24,7 @@ header {
         width: 1024px;
         height: 100%;
         margin: 0 auto;
-        >h1 {
+        >.title {
             line-height: 97px;
             font-size: 18px;
             float: left;
